@@ -2,6 +2,10 @@
 
 using namespace std;
 
+template <class lol>
+
+void mySwap(lol &,lol &);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -28,5 +32,12 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+template <typename world>
+void mySwap(world &x,world &y){
+	world swap1 = x;
+	x = y;
+	y = swap1;
 }
 
